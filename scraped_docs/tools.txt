@@ -1,0 +1,185 @@
+URL: https://geminicli.com/docs/tools
+Scraped: 2026-02-27T16:12:32.926227+00:00
+
+Gemini CLI tools | Gemini CLI
+Skip to content
+Gemini CLI tools
+Gemini CLI uses tools to interact with your local environment, access
+information, and perform actions on your behalf. These tools extend the model’s
+capabilities beyond text generation, letting it read files, execute commands,
+and search the web.
+User-triggered tools
+Section titled “User-triggered tools”
+You can directly trigger these tools using special syntax in your prompts.
+File access
+(
+@
+):
+Use the
+@
+symbol
+followed by a file or directory path to include its content in your prompt.
+This triggers the
+read_many_files
+tool.
+Shell commands
+(
+!
+):
+Use the
+!
+symbol followed by a
+system command to execute it directly. This triggers the
+run_shell_command
+tool.
+Model-triggered tools
+Section titled “Model-triggered tools”
+The Gemini model automatically requests these tools when it needs to perform
+specific actions or gather information to fulfill your requests. You do not call
+these tools manually.
+File management
+Section titled “File management”
+These tools let the model explore and modify your local codebase.
+Directory listing
+(
+list_directory
+):
+Lists files and subdirectories.
+File reading
+(
+read_file
+):
+Reads the
+content of a specific file.
+File writing
+(
+write_file
+):
+Creates or
+overwrites a file with new content.
+File search
+(
+glob
+):
+Finds files matching a glob
+pattern.
+Text search
+(
+search_file_content
+):
+Searches for text within files using grep or
+ripgrep.
+Text replacement
+(
+replace
+):
+Performs precise
+edits within a file.
+Agent coordination
+Section titled “Agent coordination”
+These tools help the model manage its plan and interact with you.
+Ask user (
+ask_user
+):
+Requests clarification or missing information from
+you via an interactive dialog.
+Memory
+(
+save_memory
+):
+Saves important facts to your
+long-term memory (
+GEMINI.md
+).
+Todos
+(
+write_todos
+):
+Manages a list of subtasks for
+complex plans.
+Agent Skills
+(
+activate_skill
+):
+Loads specialized
+procedural expertise when needed.
+Browser agent
+(
+browser_agent
+):
+Automates web browser tasks through the accessibility
+tree.
+Internal docs (
+get_internal_docs
+):
+Accesses Gemini CLI’s own
+documentation to help answer your questions.
+Information gathering
+Section titled “Information gathering”
+These tools provide the model with access to external data.
+Web fetch
+(
+web_fetch
+):
+Retrieves and processes content
+from specific URLs.
+Web search
+(
+google_web_search
+):
+Performs a Google
+Search to find up-to-date information.
+How to use tools
+Section titled “How to use tools”
+You use tools indirectly by providing natural language prompts to Gemini CLI.
+Prompt:
+You enter a request or use syntax like
+@
+or
+!
+.
+Request:
+The model analyzes your request and identifies if a tool is
+required.
+Validation:
+If a tool is needed, the CLI validates the parameters and
+checks your security settings.
+Confirmation:
+For sensitive operations (like writing files), the CLI
+prompts you for approval.
+Execution:
+The tool runs, and its output is sent back to the model.
+Response:
+The model uses the results to generate a final, grounded
+answer.
+Security and confirmation
+Section titled “Security and confirmation”
+Safety is a core part of the tool system. To protect your system, Gemini CLI
+implements several safeguards.
+User confirmation:
+You must manually approve tools that modify files or
+execute shell commands. The CLI shows you a diff or the exact command before
+you confirm.
+Sandboxing:
+You can run tool executions in secure, containerized
+environments to isolate changes from your host system. For more details, see
+the
+Sandboxing
+guide.
+Trusted folders:
+You can configure which directories allow the model to
+use system tools.
+Always review confirmation prompts carefully before allowing a tool to execute.
+Next steps
+Section titled “Next steps”
+Learn how to
+Provide context
+to guide tool use.
+Explore the
+Command reference
+for tool-related
+slash commands.
+This website uses
+cookies
+from Google to deliver and enhance the quality of its services and to analyze
+        traffic.

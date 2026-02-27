@@ -1,0 +1,53 @@
+URL: https://geminicli.com/docs/tools/memory
+Scraped: 2026-02-27T16:12:33.736352+00:00
+
+Memory tool (`save_memory`) | Gemini CLI
+Skip to content
+Memory tool (`save_memory`)
+The
+save_memory
+tool allows the Gemini agent to persist specific facts, user
+preferences, and project details across sessions.
+Technical reference
+Section titled “Technical reference”
+This tool appends information to the
+## Gemini Added Memories
+section of your
+global
+GEMINI.md
+file (typically located at
+~/.gemini/GEMINI.md
+).
+Arguments
+Section titled “Arguments”
+fact
+(string, required): A clear, self-contained statement in natural
+language.
+Technical behavior
+Section titled “Technical behavior”
+Storage:
+Appends to the global context file in the user’s home directory.
+Loading:
+The stored facts are automatically included in the hierarchical
+context system for all future sessions.
+Format:
+Saves data as a bulleted list item within a dedicated Markdown
+section.
+Use cases
+Section titled “Use cases”
+Persisting user preferences (for example, “I prefer functional programming”).
+Saving project-wide architectural decisions.
+Storing frequently used aliases or system configurations.
+Next steps
+Section titled “Next steps”
+Follow the
+Memory management guide
+for practical examples.
+Learn how the
+Project context (GEMINI.md)
+system loads
+this information.
+This website uses
+cookies
+from Google to deliver and enhance the quality of its services and to analyze
+        traffic.

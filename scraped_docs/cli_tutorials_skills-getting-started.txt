@@ -1,0 +1,185 @@
+URL: https://geminicli.com/docs/cli/tutorials/skills-getting-started/
+Scraped: 2026-02-27T16:11:48.046144+00:00
+
+Get started with Agent Skills | Gemini CLI
+Skip to content
+Get started with Agent Skills
+Agent Skills extend Gemini CLI with specialized expertise. In this guide, you’ll
+learn how to create your first skill, bundle custom scripts, and activate them
+during a session.
+How to create a skill
+Section titled “How to create a skill”
+A skill is defined by a directory containing a
+SKILL.md
+file. Let’s create an
+API Auditor
+skill that helps you verify if local or remote endpoints are
+responding correctly.
+Create the directory structure
+Section titled “Create the directory structure”
+Run the following command to create the folders:
+Terminal window
+mkdir
+-p
+.gemini/skills/api-auditor/scripts
+Create the definition
+Section titled “Create the definition”
+Create a file at
+.gemini/skills/api-auditor/SKILL.md
+. This tells the agent
+when
+to use the skill and
+how
+to behave.
+---
+name
+:
+api-auditor
+description
+:
+Expertise in auditing and testing API endpoints. Use when the user asks to
+"check"
+,
+"test"
+,
+or "audit" a URL or API.
+---
+# API Auditor Instructions
+You act as a QA engineer specialized in API reliability. When this skill is
+active, you MUST:
+1.
+**Audit**
+: Use the bundled
+`scripts/audit.js`
+utility to check the
+status of the provided URL.
+2.
+**Report**
+: Analyze the output (status codes, latency) and explain any
+failures in plain English.
+3.
+**Secure**
+: Remind the user if they are testing a sensitive endpoint
+without an
+`https://`
+protocol.
+Add the tool logic
+Section titled “Add the tool logic”
+Skills can bundle resources like scripts.
+Create a file at
+.gemini/skills/api-auditor/scripts/audit.js
+. This is the
+code the agent will run.
+.gemini/skills/api-auditor/scripts/audit.js
+const
+url
+=
+process.argv[
+2
+];
+if
+(
+!
+url) {
+console.
+error
+(
+'Usage: node audit.js <url>'
+);
+process.
+exit
+(
+1
+);
+}
+console.
+log
+(
+`Auditing ${
+url
+}...`
+);
+fetch
+(url, { method:
+'HEAD'
+})
+.
+then
+((
+r
+)
+=>
+console.
+log
+(
+`Result: Success (Status ${
+r
+.
+status
+})`
+))
+.
+catch
+((
+e
+)
+=>
+console.
+error
+(
+`Result: Failed (${
+e
+.
+message
+})`
+));
+How to verify discovery
+Section titled “How to verify discovery”
+Gemini CLI automatically discovers skills in the
+.gemini/skills
+directory. You
+can also use
+.agents/skills
+as a more generic alternative. Check that it found
+your new skill.
+Command:
+/skills list
+You should see
+api-auditor
+in the list of available skills.
+How to use the skill
+Section titled “How to use the skill”
+Now, try it out. Start a new session and ask a question that triggers the
+skill’s description.
+User:
+“Can you audit
+http://geminicli.com
+”
+Gemini recognizes the request matches the
+api-auditor
+description and asks for
+permission to activate it.
+Model:
+(After calling
+activate_skill
+) “I’ve activated the
+api-auditor
+skill. I’ll run the audit script now…”
+Gemini then uses the
+run_shell_command
+tool to execute your bundled Node
+script:
+node .gemini/skills/api-auditor/scripts/audit.js http://geminili.com
+Next steps
+Section titled “Next steps”
+Explore the
+Agent Skills Authoring Guide
+to learn
+about more advanced features.
+Learn how to share skills via
+Extensions
+.
+This website uses
+cookies
+from Google to deliver and enhance the quality of its services and to analyze
+        traffic.

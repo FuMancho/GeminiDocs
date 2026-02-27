@@ -1,0 +1,251 @@
+URL: https://geminicli.com/docs/
+Scraped: 2026-02-27T16:11:42.453063+00:00
+
+Gemini CLI documentation | Gemini CLI
+Skip to content
+Gemini CLI documentation
+Gemini CLI brings the power of Gemini models directly into your terminal. Use it
+to understand code, automate tasks, and build workflows with your local project
+context.
+Install
+Section titled “Install”
+Terminal window
+npm
+install
+-g
+@google/gemini-cli
+Get started
+Section titled “Get started”
+Jump in to Gemini CLI.
+Quickstart
+:
+Your first session with Gemini CLI.
+Installation
+:
+How to install Gemini CLI
+on your system.
+Authentication
+:
+Setup instructions for
+personal and enterprise accounts.
+Examples
+:
+Practical examples of Gemini CLI in
+action.
+CLI cheatsheet
+:
+A quick reference for common
+commands and options.
+Gemini 3 on Gemini CLI
+:
+Learn about Gemini 3
+support in Gemini CLI.
+Use Gemini CLI
+Section titled “Use Gemini CLI”
+User-focused guides and tutorials for daily development workflows.
+File management
+:
+How to work with
+local files and directories.
+Get started with Agent skills
+:
+Getting started with specialized expertise.
+Manage context and memory
+:
+Managing persistent instructions and facts.
+Execute shell commands
+:
+Executing
+system commands safely.
+Manage sessions and history
+:
+Resuming, managing, and rewinding conversations.
+Plan tasks with todos
+:
+Using todos for
+complex workflows.
+Web search and fetch
+:
+Searching and
+fetching content from the web.
+Set up an MCP server
+:
+Set up an MCP
+server.
+Automate tasks
+:
+Automate tasks.
+Features
+Section titled “Features”
+Technical documentation for each capability of Gemini CLI.
+Extensions
+:
+Extend Gemini CLI with new tools and
+capabilities.
+Agent Skills
+:
+Use specialized agents for specific
+tasks.
+Checkpointing
+:
+Automatic session snapshots.
+Headless mode
+:
+Programmatic and scripting interface.
+Hooks
+:
+Customize Gemini CLI behavior with scripts.
+IDE integration
+:
+Integrate Gemini CLI with
+your favorite IDE.
+MCP servers
+:
+Connect to and use remote agents.
+Model routing
+:
+Automatic fallback resilience.
+Model selection
+:
+Choose the best model for your needs.
+Plan mode 🔬
+:
+Use a safe, read-only mode for
+planning complex changes.
+Subagents 🔬
+:
+Using specialized agents for specific
+tasks.
+Remote subagents 🔬
+:
+Connecting to and using
+remote agents.
+Rewind
+:
+Rewind and replay sessions.
+Sandboxing
+:
+Isolate tool execution.
+Settings
+:
+Full configuration reference.
+Telemetry
+:
+Usage and performance metric details.
+Token caching
+:
+Performance optimization.
+Configuration
+Section titled “Configuration”
+Settings and customization options for Gemini CLI.
+Custom commands
+:
+Personalized shortcuts.
+Enterprise configuration
+:
+Professional environment
+controls.
+Ignore files (.geminiignore)
+:
+Exclusion pattern
+reference.
+Model configuration
+:
+Fine-tune generation
+parameters like temperature and thinking budget.
+Project context (GEMINI.md)
+:
+Technical hierarchy of
+context files.
+System prompt override
+:
+Instruction replacement
+logic.
+Themes
+:
+UI personalization technical guide.
+Trusted folders
+:
+Security permission logic.
+Reference
+Section titled “Reference”
+Deep technical documentation and API specifications.
+Command reference
+:
+Detailed slash command
+guide.
+Configuration reference
+:
+Settings and
+environment variables.
+Keyboard shortcuts
+:
+Productivity
+tips.
+Memory import processor
+:
+How Gemini CLI
+processes memory from various sources.
+Policy engine
+:
+Fine-grained execution
+control.
+Tools API
+:
+The API for defining and using
+tools.
+Resources
+Section titled “Resources”
+Support, release history, and legal information.
+FAQ
+:
+Answers to frequently asked questions.
+Quota and pricing
+:
+Limits and billing
+details.
+Terms and privacy
+:
+Official notices and
+terms.
+Troubleshooting
+:
+Common issues and
+solutions.
+Uninstall
+:
+How to uninstall Gemini CLI.
+Development
+Section titled “Development”
+Contribution guide
+:
+How to contribute to Gemini CLI.
+Integration testing
+:
+Running integration tests.
+Issue and PR automation
+:
+Automation for
+issues and pull requests.
+Local development
+:
+Setting up a local
+development environment.
+NPM package structure
+:
+The structure of the NPM packages.
+Releases
+Section titled “Releases”
+Release notes
+:
+Release notes for all versions.
+Stable release
+:
+The latest stable release.
+Preview release
+:
+The latest preview release.
+This website uses
+cookies
+from Google to deliver and enhance the quality of its services and to analyze
+        traffic.
