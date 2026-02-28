@@ -102,3 +102,10 @@
 - [Changelogs](https://geminicli.com/docs/changelogs/)
 - [Latest Changelog](https://geminicli.com/docs/changelogs/latest/)
 - [Preview Changelog](https://geminicli.com/docs/changelogs/preview/)
+
+## Reference Sources (for Jules)
+- [GitHub — google/gemini-cli](https://github.com/google/gemini-cli)
+- [GitHub Releases Atom Feed](https://github.com/google/gemini-cli/releases.atom)
+- [Google AI for Developers](https://ai.google.dev/gemini-api/docs)
+- [Google AI Blog](https://blog.google/technology/ai/)
+
