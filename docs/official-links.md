@@ -55,7 +55,6 @@
 - [Memory](https://geminicli.com/docs/tools/memory)
 - [Planning](https://geminicli.com/docs/tools/planning.md)
 - [Shell](https://geminicli.com/docs/tools/shell)
-- [Todos](https://geminicli.com/docs/tools/todos)
 - [Web Fetch](https://geminicli.com/docs/tools/web-fetch)
 - [Web Search](https://geminicli.com/docs/tools/web-search)
 
