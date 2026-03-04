@@ -20,48 +20,33 @@ npm install -g @google/gemini-cli
 
 For additional installation options, see the [Installation Guide](https://geminicli.com/docs/get-started/installation/).
 
-## Authentication
+## Authenticate
 
-1. Launch Gemini CLI:
+To begin using Gemini CLI, you must authenticate with a Google service. In most cases, you can log in with your existing Google account:
+
+1. Run Gemini CLI after installation:
 
    ```bash
    gemini
    ```
 
-2. When prompted, select **Login with Google**.
-3. Authenticate via the browser popup.
+2. When asked "How would you like to authenticate for this project?" select **1. Login with Google**.
+3. Select your Google account.
+4. Click on **Sign in**.
 
-Once authenticated, your credentials are stored locally.
+Certain account types may require you to configure a Google Cloud project. For more information, including other authentication methods, see [Gemini CLI Authentication Setup](https://geminicli.com/docs/get-started/authentication/).
 
-## First Session
+## Configure
 
-```mermaid
-flowchart LR
-    A["npm install"] --> B["Authenticate"]
-    B --> C["cd into project"]
-    C --> D["Run gemini"]
-    D --> E["Start prompting"]
-```
+Gemini CLI offers several ways to configure its behavior, including environment variables, command-line arguments, and settings files.
 
-Open a terminal in any project directory and launch:
+To explore your configuration options, see [Gemini CLI Configuration](https://geminicli.com/docs/reference/configuration/).
 
-```bash
-cd /path/to/your/project
-gemini
-```
+## Use
 
-Try some initial prompts:
+Once installed and authenticated, you can start using Gemini CLI by issuing commands and prompts in your terminal. Ask it to generate code, explain files, and more.
 
-```text
-Explain this codebase to me.
-```
-
-```text
-@src/ Summarize the code in this directory.
-```
-
-> [!TIP]
-> Use `@path/to/file` to inject file or directory contents directly into your prompt.
+To explore the power of Gemini CLI, see [Gemini CLI examples](https://geminicli.com/docs/get-started/examples/).
 
 ## Check Usage & Quota
 

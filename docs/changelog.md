@@ -3,6 +3,16 @@
 > Curated changelog sourced from the [official Gemini CLI releases](https://github.com/google-gemini/gemini-cli/releases).
 > Last updated: 2026-03-04
 
+## v0.33.0-preview.0 (Preview)
+
+### Highlights
+- **Plan Mode Enhancements**: Added support for annotating plans with feedback for iteration, enabling built-in research subagents in plan mode, and a new `copy` subcommand.
+- **Agent and Skill Improvements**: Introduced the new `github-issue-creator` skill, implemented HTTP authentication support for A2A remote agents, and added support for authenticated A2A agent card discovery.
+- **CLI UX/UI Updates**: Redesigned the header to be compact with an ASCII icon, inverted the context window display to show usage, and directly indicate auth required state for agents.
+- **Core and ACP Enhancements**: Implemented slash command handling in ACP (for `/memory`, `/init`, `/extensions`, and `/restore`), added a set models interface to ACP, and centralized `read_file` limits while truncating large MCP tool output.
+
+---
+
 ## v0.32.0-preview.0 (Preview)
 
 ### Highlights
