@@ -107,17 +107,63 @@ All conversations are automatically saved. Browse, resume, and manage sessions:
 /chat share file.md  # Export conversation to file
 ```
 
-## Additional Features
+## User-triggered tools
 
-| Feature | Description | Link |
-|---|---|---|
-| Sandbox | Isolated execution environment | [Sandbox](https://geminicli.com/docs/cli/sandbox/) |
-| Headless Mode | Non-interactive automation | [Headless](https://geminicli.com/docs/cli/headless/) |
-| Token Caching | Reduce API costs | [Token Caching](https://geminicli.com/docs/cli/token-caching/) |
-| Themes | Customize visual appearance | [Themes](https://geminicli.com/docs/cli/themes/) |
-| Vim Mode | Vim-style input navigation | Use `/vim` to toggle |
-| Custom Commands | User-defined prompt shortcuts | [Custom Commands](https://geminicli.com/docs/cli/custom-commands/) |
+You can directly trigger these tools using special syntax in your prompts.
 
-## Browser Agent
+- **File access (`@`)**: Use the `@` symbol followed by a file or directory path to include its content in your prompt. This triggers the `read_many_files` tool.
+- **Shell commands (`!`)**: Use the `!` symbol followed by a system command to execute it directly. This triggers the `run_shell_command` tool.
 
-The Browser Agent is an experimental feature currently under active development. It automates web browser tasks—such as navigating websites, filling forms, clicking buttons, and extracting information from web pages—using the accessibility tree.
+## Model-triggered tools
+
+The Gemini model automatically requests these tools when it needs to perform specific actions or gather information to fulfill your requests. You do not call these tools manually.
+
+### File management
+
+These tools let the model explore and modify your local codebase.
+
+- **Directory listing (`list_directory`)**: Lists files and subdirectories.
+- **File reading (`read_file`)**: Reads the content of a specific file.
+- **File writing (`write_file`)**: Creates or overwrites a file with new content.
+- **File search (`glob`)**: Finds files matching a glob pattern.
+- **Text search (`search_file_content`)**: Searches for text within files using grep or ripgrep.
+- **Text replacement (`replace`)**: Performs precise edits within a file.
+
+### Agent coordination
+
+These tools help the model manage its plan and interact with you.
+
+- **Ask user (`ask_user`)**: Requests clarification or missing information from you via an interactive dialog.
+- **Memory (`save_memory`)**: Saves important facts to your long-term memory (`GEMINI.md`).
+- **Subtasks (`write_tasks`)**: Manages a list of subtasks for complex plans.
+- **Agent Skills (`activate_skill`)**: Loads specialized procedural expertise when needed.
+- **Browser agent (`browser_agent`)**: Automates web browser tasks through the accessibility tree.
+- **Internal docs (`get_internal_docs`)**: Accesses Gemini CLI's own documentation to help answer your questions.
+
+### Information gathering
+
+These tools provide the model with access to external data.
+
+- **Web fetch (`web_fetch`)**: Retrieves and processes content from specific URLs.
+- **Web search (`google_web_search`)**: Performs a Google Search to find up-to-date information.
+
+## How to use tools
+
+You use tools indirectly by providing natural language prompts to Gemini CLI.
+
+1. **Prompt**: You enter a request or use syntax like `@` or `!`.
+2. **Request**: The model analyzes your request and identifies if a tool is required.
+3. **Validation**: If a tool is needed, the CLI validates the parameters and checks your security settings.
+4. **Confirmation**: For sensitive operations (like writing files), the CLI prompts you for approval.
+5. **Execution**: The tool runs, and its output is sent back to the model.
+6. **Response**: The model uses the results to generate a final, grounded answer.
+
+## Security and confirmation
+
+Safety is a core part of the tool system. To protect your system, Gemini CLI implements several safeguards.
+
+- **User confirmation**: You must manually approve tools that modify files or execute shell commands. The CLI shows you a diff or the exact command before you confirm.
+- **Sandboxing**: You can run tool executions in secure, containerized environments to isolate changes from your host system.
+- **Trusted folders**: You can configure which directories allow the model to use system tools.
+
+Always review confirmation prompts carefully before allowing a tool to execute.
