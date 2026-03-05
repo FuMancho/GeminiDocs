@@ -1,7 +1,18 @@
 # Gemini CLI Changelog
 
 > Curated changelog sourced from the [official Gemini CLI releases](https://github.com/google-gemini/gemini-cli/releases).
-> Last updated: 2026-03-04
+> Last updated: 2026-03-05
+
+## v0.32.1 (Latest Stable)
+
+### Highlights
+- **Plan Mode Enhancements**: Significant updates to Plan Mode, including the ability to open and modify plans in an external editor, adaptations for complex tasks with multi-select options, and integration tests for plan mode.
+- **Agent and Steering Improvements**: The generalist agent has been enabled to enhance task delegation, model steering is now supported directly within the workspace, and contiguous parallel admission is enabled for `Kind.Agent` tools.
+- **Interactive Shell**: Interactive shell autocompletion has been introduced, significantly enhancing the user experience.
+- **Core Stability and Performance**: Extensions are now loaded in parallel, fetch timeouts have been increased, robust A2A streaming reassembly was implemented, and orphaned processes when terminal closes have been prevented.
+- **Billing and Quota Handling**: Implemented G1 AI credits overage flow with billing telemetry and added support for quota error fallbacks across all authentication types.
+
+---
 
 ## v0.32.0-preview.0 (Preview)
 
@@ -14,7 +25,7 @@
 
 ---
 
-## v0.31.0 (Latest Stable)
+## v0.31.0
 
 ### Highlights
 - **Gemini 3.1 Pro Preview**: Support for the new Gemini 3.1 Pro Preview model
