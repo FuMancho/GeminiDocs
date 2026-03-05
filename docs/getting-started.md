@@ -4,7 +4,7 @@ Gemini CLI brings the power of Google's advanced language models directly to you
 
 ## Prerequisites
 
-- **Node.js 18+** and **npm** installed.
+- **Node.js 20.0.0+** and **npm** installed.
 - A **Google account** for authentication.
 
 > [!NOTE]

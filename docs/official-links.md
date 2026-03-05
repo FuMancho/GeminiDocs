@@ -5,6 +5,7 @@
 
 ## Getting Started
 - [Home / Overview](https://geminicli.com/docs/)
+- [Get Started](https://geminicli.com/docs/get-started/)
 - [Installation](https://geminicli.com/docs/get-started/installation/)
 - [Authentication](https://geminicli.com/docs/get-started/authentication/)
 - [Examples](https://geminicli.com/docs/get-started/examples/)
@@ -66,7 +67,7 @@
 - [Hooks](https://geminicli.com/docs/hooks/)
 - [Writing Hooks](https://geminicli.com/docs/hooks/writing-hooks)
 - [Hooks Best Practices](https://geminicli.com/docs/hooks/best-practices)
-- [Hooks Reference](https://geminicli.com/docs/hooks/reference)
+- [Hooks Reference](https://geminicli.com/docs/hooks/reference/)
 - [Extensions](https://geminicli.com/docs/extensions/)
 - [Writing Extensions](https://geminicli.com/docs/extensions/writing-extensions/)
 - [Extensions Best Practices](https://geminicli.com/docs/extensions/best-practices/)
