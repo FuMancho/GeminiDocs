@@ -4,7 +4,7 @@ An overview of the core features that make Gemini CLI a powerful agentic coding 
 
 ## Plan Mode
 
-Switch to read-only Plan Mode to have Gemini analyze your project and produce a structured plan before making any changes:
+Switch to read-only Plan Mode to have Gemini analyze your project and produce a structured plan before making any changes. You can also open and modify plans in an external editor, and it adapts to complex tasks with multi-select options:
 
 ```text
 /plan

@@ -49,8 +49,9 @@
 - [Web Tools](https://geminicli.com/docs/cli/tutorials/web-tools/)
 
 ## Tools
-- [Tools Overview](https://geminicli.com/docs/tools)
+- [Activate Skill](https://geminicli.com/docs/tools/activate-skill)
 - [Ask User](https://geminicli.com/docs/tools/ask-user.md)
+- [Internal Docs](https://geminicli.com/docs/tools/internal-docs)
 - [File System](https://geminicli.com/docs/tools/file-system)
 - [MCP Server](https://geminicli.com/docs/tools/mcp-server/)
 - [Memory](https://geminicli.com/docs/tools/memory)
@@ -84,7 +85,6 @@
 - [Keyboard Shortcuts](https://geminicli.com/docs/reference/keyboard-shortcuts/)
 - [Memport](https://geminicli.com/docs/reference/memport/)
 - [Policy Engine](https://geminicli.com/docs/reference/policy-engine/)
-- [Tools API](https://geminicli.com/docs/reference/tools-api/)
 
 ## Resources
 - [FAQ](https://geminicli.com/docs/resources/faq/)
@@ -108,4 +108,3 @@
 - [GitHub Releases Atom Feed](https://github.com/google/gemini-cli/releases.atom)
 - [Google AI for Developers](https://ai.google.dev/gemini-api/docs)
 - [Google AI Blog](https://blog.google/technology/ai/)
-
