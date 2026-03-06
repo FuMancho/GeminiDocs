@@ -244,12 +244,16 @@ gemini --headless "Integration tests" &
 
 ### Browser Agent (v0.31.0)
 
-New experimental browser agent for web page interaction:
+New browser agent for web page interaction:
 
 ```json
 {
-  "experimental": {
-    "browserAgent": true
+  "agents": {
+    "overrides": {
+      "browser_agent": {
+        "enabled": true
+      }
+    }
   }
 }
 ```
