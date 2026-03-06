@@ -114,7 +114,7 @@ Inject file or directory contents directly into your prompt:
 
 ## Shell Passthrough (`!`)
 
-Prefix a command with `!` to run it directly in your shell without leaving Gemini CLI:
+Prefix a command with `!` to run it directly in your shell without leaving Gemini CLI (supports interactive shell autocompletion):
 
 ```text
 !git status
@@ -126,6 +126,7 @@ Prefix a command with `!` to run it directly in your shell without leaving Gemin
 | Shortcut | Action |
 |---|---|
 | `Ctrl+L` | Clear screen |
+| `Alt+D` / `Cmd+D` | Forward word deletion |
 | `Esc` × 2 | Rewind |
 | `Alt+Z` / `Cmd+Z` | Undo in input |
 | `Shift+Alt+Z` / `Shift+Cmd+Z` | Redo in input |
