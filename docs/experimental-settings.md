@@ -213,9 +213,12 @@ Direct web page interaction from the CLI:
 
 ```json
 {
-  "experimental": {
-    "browserAgent": true,
-    "browserAgentTimeout": 30000
+  "agents": {
+    "overrides": {
+      "browser_agent": {
+        "enabled": true
+      }
+    }
   }
 }
 ```
