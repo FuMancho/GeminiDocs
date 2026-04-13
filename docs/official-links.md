@@ -108,3 +108,11 @@
 - [GitHub Releases Atom Feed](https://github.com/google/gemini-cli/releases.atom)
 - [Google AI for Developers](https://ai.google.dev/gemini-api/docs)
 - [Google AI Blog](https://blog.google/technology/ai/)
+
+## New Links (Discovered by Crawler)
+- [Notifications](https://geminicli.com/docs/cli/notifications/)
+- [Plan Mode Steering](https://geminicli.com/docs/cli/tutorials/plan-mode-steering/)
+- [ACP Mode](https://geminicli.com/docs/cli/acp-mode/)
+- [Tools Reference](https://geminicli.com/docs/reference/tools/)
+- [Git Worktrees](https://geminicli.com/docs/cli/git-worktrees/)
+- [Model Steering](https://geminicli.com/docs/cli/model-steering/)
