@@ -121,3 +121,13 @@ All conversations are automatically saved. Browse, resume, and manage sessions:
 ## Browser Agent
 
 The Browser Agent is an experimental feature currently under active development. It automates web browser tasks—such as navigating websites, filling forms, clicking buttons, and extracting information from web pages—using the accessibility tree.
+
+## Auto Memory
+
+Auto Memory is an experimental feature that mines your past Gemini CLI sessions in the background and turns recurring workflows into reusable Agent Skills.
+
+See [Auto Memory](./auto-memory.md).
+
+## Chapters Narrative Flow
+
+Chapters provide tool-based topic grouping to provide better session structure and narrative continuity in long-running tasks. This feature enhances agent interactions by grouping them logically.

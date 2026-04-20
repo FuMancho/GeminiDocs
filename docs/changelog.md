@@ -1,9 +1,31 @@
 # Gemini CLI Changelog
 
 > Curated changelog sourced from the [official Gemini CLI releases](https://github.com/google-gemini/gemini-cli/releases).
-> Last updated: 2026-03-05
+> Last updated: 2026-04-15
 
-## v0.32.1 (Latest Stable)
+## v0.39.0-preview.0 (Preview)
+
+### Highlights
+- **Refactored Subagents and Unified Tooling:** Consolidate subagent tools into a single `invoke_subagent` tool, removed legacy wrapping tools, and improved turn limits for codebase investigator.
+- **Advanced Memory and Skill Management:** Introduced `/memory` inbox for reviewing extracted skills and added skill patching support, enhancing agent learning and persistence.
+- **Expanded Test and Evaluation Infrastructure:** Added memory and CPU performance integration test harnesses and generalized evaluation infrastructure for better suite organization.
+- **Sandbox and Security Hardening:** Centralized sandbox paths for Linux and macOS, enforced read-only security for async git worktree resolution, and optimized Windows sandbox initialization.
+- **Enhanced CLI UX and UI Stability:** Improved scroll momentum, added a `debugRainbow` setting, and resolved various memory leaks and PTY exhaustion issues for a smoother terminal experience.
+
+---
+
+## v0.38.1 (Latest Stable)
+
+### Highlights
+- **Chapters Narrative Flow:** Introduced tool-based topic grouping ("Chapters") to provide better session structure and narrative continuity in long-running tasks.
+- **Context Compression Service:** Implemented a dedicated service for advanced context management, efficiently distilling conversation history to preserve focus and tokens.
+- **Enhanced UI Stability & UX:** Introduced a new "Terminal Buffer" mode to solve rendering flicker, along with selective topic expansion and improved tool confirmation layouts.
+- **Context-Aware Policy Approvals:** Users can now grant persistent, context-aware approvals for tools, significantly reducing manual confirmation overhead for trusted workflows.
+- **Background Process Monitoring:** New tools for monitoring and inspecting background shell processes, providing better visibility into asynchronous tasks.
+
+---
+
+## v0.32.1
 
 ### Highlights
 - **Plan Mode Enhancements**: Significant updates to Plan Mode, including the ability to open and modify plans in an external editor, adaptations for complex tasks with multi-select options, and integration tests for plan mode.
