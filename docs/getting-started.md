@@ -8,7 +8,7 @@ Gemini CLI brings the power of Google's advanced language models directly to you
 - A **Google account** for authentication.
 
 > [!NOTE]
-> Certain Google Cloud or enterprise account types may require additional project configuration. See the [Authentication Guide](https://geminicli.com/docs/get-started/authentication/) for details.
+> Certain Google Cloud or enterprise account types may require additional project configuration. See the [Authentication Guide](https://geminicli.com/docs/get-started/authentication) for details.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Install Gemini CLI globally via npm:
 npm install -g @google/gemini-cli
 ```
 
-For additional installation options, see the [Installation Guide](https://geminicli.com/docs/get-started/installation/).
+For additional installation options, see the [Installation Guide](https://geminicli.com/docs/get-started/installation).
 
 ## Authentication
 
@@ -90,6 +90,6 @@ See the full [Commands Reference](./commands.md) for all slash commands, at-comm
 ## What's Next?
 
 - [Gemini CLI Examples](https://geminicli.com/docs/get-started/examples/) — See what Gemini CLI can do
-- [Configuration](https://geminicli.com/docs/reference/configuration/) — Customize behavior and settings
-- [Tutorials](https://geminicli.com/docs/cli/tutorials/file-management/) — Step-by-step guides
-- [Extensions](https://geminicli.com/docs/extensions/) — Extend Gemini CLI with plugins
+- [Configuration](https://geminicli.com/docs/reference/configuration) — Customize behavior and settings
+- [Tutorials](https://geminicli.com/docs/cli/tutorials/file-management) — Step-by-step guides
+- [Extensions](https://geminicli.com/docs/extensions) — Extend Gemini CLI with plugins

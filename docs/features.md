@@ -13,7 +13,7 @@ Switch to read-only Plan Mode to have Gemini analyze your project and produce a 
 > [!NOTE]
 > Plan Mode requires the `experimental.plan` setting to be enabled.
 
-See [Plan Mode documentation](https://geminicli.com/docs/cli/plan-mode/).
+See [Plan Mode documentation](https://geminicli.com/docs/cli/plan-mode).
 
 ## Skills
 
@@ -37,14 +37,14 @@ Gemini CLI automatically creates Git checkpoints before modifying files, allowin
 /rewind              # Navigate backward through history (or press Esc twice)
 ```
 
-See [Checkpointing](https://geminicli.com/docs/cli/checkpointing/) and [Rewind](https://geminicli.com/docs/cli/rewind/).
+See [Checkpointing](https://geminicli.com/docs/cli/checkpointing) and [Rewind](https://geminicli.com/docs/cli/rewind/).
 
 ## Sub-Agents & Remote Agents
 
 Gemini can spawn specialized sub-agents for parallel task execution and coordinate with external remote agents:
 
-- [Sub-Agents](https://geminicli.com/docs/core/subagents/)
-- [Remote Agents](https://geminicli.com/docs/core/remote-agents/)
+- [Sub-Agents](https://geminicli.com/docs/core/subagents)
+- [Remote Agents](https://geminicli.com/docs/core/remote-agents)
 
 ## Model Context Protocol (MCP)
 
@@ -57,7 +57,7 @@ Extend Gemini CLI with third-party tools and data sources via MCP:
 /mcp refresh         # Restart all servers
 ```
 
-See [MCP Server setup](https://geminicli.com/docs/tools/mcp-server/).
+See [MCP Server setup](https://geminicli.com/docs/tools/mcp-server).
 
 ## Hooks
 
@@ -69,7 +69,7 @@ Intercept and customize Gemini CLI behavior at specific lifecycle events:
 /hooks disable <name>
 ```
 
-See [Hooks](https://geminicli.com/docs/hooks/) and [Writing Hooks](https://geminicli.com/docs/hooks/writing-hooks).
+See [Hooks](https://geminicli.com/docs/hooks) and [Writing Hooks](https://geminicli.com/docs/hooks/writing-hooks).
 
 ## Extensions
 
@@ -82,7 +82,7 @@ Install, manage, and build extensions to add custom tools and capabilities:
 /extensions disable <name>
 ```
 
-See [Extensions](https://geminicli.com/docs/extensions/) and [Writing Extensions](https://geminicli.com/docs/extensions/writing-extensions/).
+See [Extensions](https://geminicli.com/docs/extensions) and [Writing Extensions](https://geminicli.com/docs/extensions/writing-extensions/).
 
 ## IDE Integration
 
@@ -94,7 +94,7 @@ Connect Gemini CLI to your IDE for a companion coding experience:
 /ide install
 ```
 
-See the [IDE Integration guide](https://geminicli.com/docs/ide-integration/).
+See the [IDE Integration guide](https://geminicli.com/docs/ide-integration).
 
 ## Session Management
 
@@ -111,12 +111,12 @@ All conversations are automatically saved. Browse, resume, and manage sessions:
 
 | Feature | Description | Link |
 |---|---|---|
-| Sandbox | Isolated execution environment | [Sandbox](https://geminicli.com/docs/cli/sandbox/) |
-| Headless Mode | Non-interactive automation | [Headless](https://geminicli.com/docs/cli/headless/) |
-| Token Caching | Reduce API costs | [Token Caching](https://geminicli.com/docs/cli/token-caching/) |
-| Themes | Customize visual appearance | [Themes](https://geminicli.com/docs/cli/themes/) |
+| Sandbox | Isolated execution environment | [Sandbox](https://geminicli.com/docs/cli/sandbox) |
+| Headless Mode | Non-interactive automation | [Headless](https://geminicli.com/docs/cli/headless) |
+| Token Caching | Reduce API costs | [Token Caching](https://geminicli.com/docs/cli/token-caching) |
+| Themes | Customize visual appearance | [Themes](https://geminicli.com/docs/cli/themes) |
 | Vim Mode | Vim-style input navigation | Use `/vim` to toggle |
-| Custom Commands | User-defined prompt shortcuts | [Custom Commands](https://geminicli.com/docs/cli/custom-commands/) |
+| Custom Commands | User-defined prompt shortcuts | [Custom Commands](https://geminicli.com/docs/cli/custom-commands) |
 
 ## Browser Agent
 
