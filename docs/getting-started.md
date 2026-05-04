@@ -89,7 +89,6 @@ See the full [Commands Reference](./commands.md) for all slash commands, at-comm
 
 ## What's Next?
 
-- [Gemini CLI Examples](https://geminicli.com/docs/get-started/examples/) — See what Gemini CLI can do
 - [Configuration](https://geminicli.com/docs/reference/configuration/) — Customize behavior and settings
 - [Tutorials](https://geminicli.com/docs/cli/tutorials/file-management/) — Step-by-step guides
 - [Extensions](https://geminicli.com/docs/extensions/) — Extend Gemini CLI with plugins

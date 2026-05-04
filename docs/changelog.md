@@ -3,7 +3,30 @@
 > Curated changelog sourced from the [official Gemini CLI releases](https://github.com/google-gemini/gemini-cli/releases).
 > Last updated: 2026-03-05
 
-## v0.32.1 (Latest Stable)
+## v0.40.0 (Latest Stable)
+
+## Highlights
+
+- **Offline Search Support:** Bundled ripgrep binaries into the Single
+  Executable Application (SEA) to enable powerful codebase searching even in
+  environments without internet access.
+- **Enhanced Theme Customization:** Introduced GitHub-style colorblind-friendly
+  themes to improve accessibility and provide more personalized visual options.
+- **MCP Resource Management:** Added new tools for listing and reading Model
+  Context Protocol (MCP) resources, enhancing the agent's ability to discover
+  and utilize external data.
+- **Improved Narrative Flow:** Enabled topic update narrations by default to
+  provide better session structure and a clearer understanding of the agent's
+  current focus.
+- **Streamlined Local Model Setup:** Introduced a simplified `gemini gemma`
+  command for quickly setting up and running Gemma models locally.
+- **Prompt-Driven Memory Management:** Replaced the legacy `MemoryManagerAgent`
+  with a more efficient prompt-driven memory editing system across four tiers of
+  context.
+
+---
+
+## v0.32.1
 
 ### Highlights
 - **Plan Mode Enhancements**: Significant updates to Plan Mode, including the ability to open and modify plans in an external editor, adaptations for complex tasks with multi-select options, and integration tests for plan mode.
