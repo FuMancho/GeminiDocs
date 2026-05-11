@@ -1,7 +1,7 @@
 # Official Gemini CLI Documentation Links
 
 > All links sourced from [`geminicli.com`](https://geminicli.com/docs/).
-> Last crawled: 2026-02-27
+> Last crawled: 2026-05-11
 
 ## Getting Started
 - [Home / Overview](https://geminicli.com/docs/)
@@ -12,10 +12,17 @@
 - [Gemini 3](https://geminicli.com/docs/get-started/gemini-3/)
 
 ## CLI Core Features
+- [Using Agent Skills](https://geminicli.com/docs/cli/using-agent-skills/)
+- [Skills Best Practices](https://geminicli.com/docs/cli/skills-best-practices/)
+- [ACP Mode](https://geminicli.com/docs/cli/acp-mode/)
+- [Auto Memory](https://geminicli.com/docs/cli/auto-memory/)
+- [Git Worktrees](https://geminicli.com/docs/cli/git-worktrees/)
+- [Notifications](https://geminicli.com/docs/cli/notifications/)
+- [Model Steering](https://geminicli.com/docs/cli/model-steering/)
 - [CLI Reference](https://geminicli.com/docs/cli/cli-reference/)
 - [Plan Mode](https://geminicli.com/docs/cli/plan-mode/)
 - [Skills](https://geminicli.com/docs/cli/skills/)
-- [Creating Skills](https://geminicli.com/docs/cli/creating-skills)
+- [Creating Skills](https://geminicli.com/docs/cli/creating-skills/)
 - [Custom Commands](https://geminicli.com/docs/cli/custom-commands/)
 - [Session Management](https://geminicli.com/docs/cli/session-management)
 - [Checkpointing](https://geminicli.com/docs/cli/checkpointing/)
@@ -38,6 +45,7 @@
 - [Telemetry](https://geminicli.com/docs/cli/telemetry/)
 
 ## Tutorials
+- [Plan Mode Steering](https://geminicli.com/docs/cli/tutorials/plan-mode-steering/)
 - [Automation](https://geminicli.com/docs/cli/tutorials/automation/)
 - [File Management](https://geminicli.com/docs/cli/tutorials/file-management/)
 - [MCP Setup](https://geminicli.com/docs/cli/tutorials/mcp-setup/)
@@ -49,6 +57,7 @@
 - [Web Tools](https://geminicli.com/docs/cli/tutorials/web-tools/)
 
 ## Tools
+- [MCP Resources](https://geminicli.com/docs/tools/mcp-resources/)
 - [Activate Skill](https://geminicli.com/docs/tools/activate-skill)
 - [Ask User](https://geminicli.com/docs/tools/ask-user.md)
 - [Internal Docs](https://geminicli.com/docs/tools/internal-docs)
@@ -80,7 +89,8 @@
 - [IDE Companion Spec](https://geminicli.com/docs/ide-integration/ide-companion-spec)
 
 ## Reference
-- [Commands Reference](https://geminicli.com/docs/reference/commands)
+- [Tools Reference](https://geminicli.com/docs/reference/tools/)
+- [Commands Reference](https://geminicli.com/docs/reference/commands/)
 - [Configuration Reference](https://geminicli.com/docs/reference/configuration/)
 - [Keyboard Shortcuts](https://geminicli.com/docs/reference/keyboard-shortcuts/)
 - [Memport](https://geminicli.com/docs/reference/memport/)
@@ -88,7 +98,7 @@
 
 ## Resources
 - [FAQ](https://geminicli.com/docs/resources/faq/)
-- [Quota and Pricing](https://geminicli.com/docs/resources/quota-and-pricing)
+- [Quota and Pricing](https://geminicli.com/docs/resources/quota-and-pricing/)
 - [Terms of Service & Privacy](https://geminicli.com/docs/resources/tos-privacy/)
 - [Troubleshooting](https://geminicli.com/docs/resources/troubleshooting/)
 - [Uninstall](https://geminicli.com/docs/resources/uninstall/)
