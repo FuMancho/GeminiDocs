@@ -8,16 +8,13 @@
 - [Get Started](https://geminicli.com/docs/get-started/)
 - [Installation](https://geminicli.com/docs/get-started/installation/)
 - [Authentication](https://geminicli.com/docs/get-started/authentication/)
-- [Examples](https://geminicli.com/docs/get-started/examples/)
 - [Gemini 3](https://geminicli.com/docs/get-started/gemini-3/)
 
 ## CLI Core Features
 - [CLI Reference](https://geminicli.com/docs/cli/cli-reference/)
 - [Plan Mode](https://geminicli.com/docs/cli/plan-mode/)
 - [Skills](https://geminicli.com/docs/cli/skills/)
-- [Creating Skills](https://geminicli.com/docs/cli/creating-skills)
 - [Custom Commands](https://geminicli.com/docs/cli/custom-commands/)
-- [Session Management](https://geminicli.com/docs/cli/session-management)
 - [Checkpointing](https://geminicli.com/docs/cli/checkpointing/)
 - [Rewind](https://geminicli.com/docs/cli/rewind/)
 - [Headless Mode](https://geminicli.com/docs/cli/headless/)
@@ -26,6 +23,11 @@
 - [Token Caching](https://geminicli.com/docs/cli/token-caching/)
 - [Trusted Folders](https://geminicli.com/docs/cli/trusted-folders/)
 
+- [ACP Mode](https://geminicli.com/docs/cli/acp-mode/)
+- [Auto Memory](https://geminicli.com/docs/cli/auto-memory/)
+- [Git Worktrees](https://geminicli.com/docs/cli/git-worktrees/)
+- [Notifications](https://geminicli.com/docs/cli/notifications/)
+- [Skills Best Practices](https://geminicli.com/docs/cli/skills-best-practices/)
 ## Configuration
 - [Settings](https://geminicli.com/docs/cli/settings/)
 - [Model Selection](https://geminicli.com/docs/cli/model/)
@@ -37,6 +39,7 @@
 - [Enterprise](https://geminicli.com/docs/cli/enterprise/)
 - [Telemetry](https://geminicli.com/docs/cli/telemetry/)
 
+- [Model Steering](https://geminicli.com/docs/cli/model-steering/)
 ## Tutorials
 - [Automation](https://geminicli.com/docs/cli/tutorials/automation/)
 - [File Management](https://geminicli.com/docs/cli/tutorials/file-management/)
@@ -48,26 +51,19 @@
 - [Task Planning](https://geminicli.com/docs/cli/tutorials/task-planning/)
 - [Web Tools](https://geminicli.com/docs/cli/tutorials/web-tools/)
 
+- [Creating Skills](https://geminicli.com/docs/cli/creating-skills/)
+- [Plan Mode Steering](https://geminicli.com/docs/cli/tutorials/plan-mode-steering/)
+- [Using Agent Skills](https://geminicli.com/docs/cli/using-agent-skills/)
 ## Tools
-- [Activate Skill](https://geminicli.com/docs/tools/activate-skill)
-- [Ask User](https://geminicli.com/docs/tools/ask-user.md)
-- [Internal Docs](https://geminicli.com/docs/tools/internal-docs)
-- [File System](https://geminicli.com/docs/tools/file-system)
 - [MCP Server](https://geminicli.com/docs/tools/mcp-server/)
-- [Memory](https://geminicli.com/docs/tools/memory)
-- [Planning](https://geminicli.com/docs/tools/planning.md)
-- [Shell](https://geminicli.com/docs/tools/shell)
-- [Web Fetch](https://geminicli.com/docs/tools/web-fetch)
-- [Web Search](https://geminicli.com/docs/tools/web-search)
 
+- [MCP Resources](https://geminicli.com/docs/tools/mcp-resources/)
 ## Agentic Architecture
 - [Sub-Agents](https://geminicli.com/docs/core/subagents/)
 - [Remote Agents](https://geminicli.com/docs/core/remote-agents/)
 
 ## Hooks & Extensions
 - [Hooks](https://geminicli.com/docs/hooks/)
-- [Writing Hooks](https://geminicli.com/docs/hooks/writing-hooks)
-- [Hooks Best Practices](https://geminicli.com/docs/hooks/best-practices)
 - [Hooks Reference](https://geminicli.com/docs/hooks/reference/)
 - [Extensions](https://geminicli.com/docs/extensions/)
 - [Writing Extensions](https://geminicli.com/docs/extensions/writing-extensions/)
@@ -77,7 +73,6 @@
 
 ## IDE Integration
 - [IDE Integration](https://geminicli.com/docs/ide-integration/)
-- [IDE Companion Spec](https://geminicli.com/docs/ide-integration/ide-companion-spec)
 
 ## Reference
 - [Commands Reference](https://geminicli.com/docs/reference/commands)
@@ -86,6 +81,7 @@
 - [Memport](https://geminicli.com/docs/reference/memport/)
 - [Policy Engine](https://geminicli.com/docs/reference/policy-engine/)
 
+- [Tools](https://geminicli.com/docs/reference/tools/)
 ## Resources
 - [FAQ](https://geminicli.com/docs/resources/faq/)
 - [Quota and Pricing](https://geminicli.com/docs/resources/quota-and-pricing)

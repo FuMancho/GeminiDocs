@@ -242,6 +242,14 @@ gemini --headless "Integration tests" &
 
 ## Experimental Features
 
+### Voice Mode
+
+Enable experimental voice dictation and commands (`/voice`, `/voice model`) by setting `experimental.voiceMode` to `true`.
+
+### Gemma 4 by Default
+
+Gemma 4 models are accessible via the Gemini API using `experimental.gemma`. To use local endpoints with the LiteRT-LM shim, enable `experimental.gemmaModelRouter.enabled`. Optionally, set `experimental.gemmaModelRouter.autoStartServer` to `true` to automatically start the LiteRT-LM server when Gemini CLI starts.
+
 ### Browser Agent (v0.31.0)
 
 New browser agent for web page interaction:

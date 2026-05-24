@@ -118,6 +118,14 @@ All conversations are automatically saved. Browse, resume, and manage sessions:
 | Vim Mode | Vim-style input navigation | Use `/vim` to toggle |
 | Custom Commands | User-defined prompt shortcuts | [Custom Commands](https://geminicli.com/docs/cli/custom-commands/) |
 
+## Auto Memory
+
+Auto Memory is an experimental feature that mines your past Gemini CLI sessions
+in the background and proposes durable memory updates and reusable
+[Agent Skills](/docs/cli/skills). You review each candidate before it becomes
+available to future sessions: apply memory updates, promote skills, or discard
+anything you do not want.
+
 ## Browser Agent
 
 The Browser Agent is an experimental feature currently under active development. It automates web browser tasks—such as navigating websites, filling forms, clicking buttons, and extracting information from web pages—using the accessibility tree.
