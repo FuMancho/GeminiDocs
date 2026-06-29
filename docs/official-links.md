@@ -27,6 +27,8 @@
 - [Auto Memory](https://geminicli.com/docs/cli/auto-memory/)
 - [Git Worktrees](https://geminicli.com/docs/cli/git-worktrees/)
 - [Notifications](https://geminicli.com/docs/cli/notifications/)
+- [Commands](https://geminicli.com/docs/reference/commands/)
+- [Quota And Pricing](https://geminicli.com/docs/resources/quota-and-pricing/)
 - [Skills Best Practices](https://geminicli.com/docs/cli/skills-best-practices/)
 ## Configuration
 - [Settings](https://geminicli.com/docs/cli/settings/)
