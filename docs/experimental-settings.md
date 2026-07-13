@@ -121,7 +121,7 @@ All agent responses MUST be valid JSON matching this schema:
   "tests_passed": 12,
   "summary": "Brief description of changes"
 }
-```
+```text
 ```
 
 ## Maestro Multi-Agent Platform
@@ -147,7 +147,7 @@ All agent responses MUST be valid JSON matching this schema:
 
 ### 4-Phase Orchestration
 
-```
+```text
 Phase 1: Plan    → Architect produces spec
 Phase 2: Execute → Coder + specialists implement
 Phase 3: Verify  → Tester + Reviewer validate
@@ -302,7 +302,7 @@ The Memory Import Processor concatenates imported files at runtime. Verify with:
 
 ### File Filtering for Large Repos
 
-```
+```text
 # .geminiignore — aggressive filtering
 node_modules/
 dist/
