@@ -25,7 +25,7 @@ flowchart TD
 
 ## The .gemini/ Strategic Command Center
 
-```
+```text
 .gemini/
 ├── settings.json       # Project settings
 ├── GEMINI.md           # Persistent context/instructions
@@ -203,7 +203,7 @@ Higher `priority` numbers win when rules conflict. Built-in defaults use low pri
 
 Prevent sensitive files from being indexed:
 
-```
+```text
 # .geminiignore
 .env
 .env.*
@@ -222,7 +222,7 @@ build/
 
 Advanced multi-agent pattern for parallelizing work:
 
-```
+```text
 Wave 1: Agent A (scaffold) + Agent B (research)
    ↓ barrier
 Wave 2: Agent C (implement) + Agent D (implement)

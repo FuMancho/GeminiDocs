@@ -4,6 +4,10 @@
 > Last crawled: 2026-02-27
 
 ## Getting Started
+- [Get Started](https://geminicli.com/docs/get-started)
+- [Authentication](https://geminicli.com/docs/get-started/authentication)
+- [Gemini 3](https://geminicli.com/docs/get-started/gemini-3)
+- [Installation](https://geminicli.com/docs/get-started/installation)
 - [Home / Overview](https://geminicli.com/docs/)
 - [Get Started](https://geminicli.com/docs/get-started/)
 - [Installation](https://geminicli.com/docs/get-started/installation/)
@@ -11,6 +15,17 @@
 - [Gemini 3](https://geminicli.com/docs/get-started/gemini-3/)
 
 ## CLI Core Features
+- [Checkpointing](https://geminicli.com/docs/cli/checkpointing)
+- [Cli Reference](https://geminicli.com/docs/cli/cli-reference)
+- [Custom Commands](https://geminicli.com/docs/cli/custom-commands)
+- [Headless](https://geminicli.com/docs/cli/headless)
+- [Plan Mode](https://geminicli.com/docs/cli/plan-mode)
+- [Rewind](https://geminicli.com/docs/cli/rewind)
+- [Sandbox](https://geminicli.com/docs/cli/sandbox)
+- [Skills](https://geminicli.com/docs/cli/skills)
+- [Themes](https://geminicli.com/docs/cli/themes)
+- [Token Caching](https://geminicli.com/docs/cli/token-caching)
+- [Trusted Folders](https://geminicli.com/docs/cli/trusted-folders)
 - [CLI Reference](https://geminicli.com/docs/cli/cli-reference/)
 - [Plan Mode](https://geminicli.com/docs/cli/plan-mode/)
 - [Skills](https://geminicli.com/docs/cli/skills/)
@@ -29,6 +44,15 @@
 - [Notifications](https://geminicli.com/docs/cli/notifications/)
 - [Skills Best Practices](https://geminicli.com/docs/cli/skills-best-practices/)
 ## Configuration
+- [Enterprise](https://geminicli.com/docs/cli/enterprise)
+- [Gemini Ignore](https://geminicli.com/docs/cli/gemini-ignore)
+- [Gemini Md](https://geminicli.com/docs/cli/gemini-md)
+- [Generation Settings](https://geminicli.com/docs/cli/generation-settings)
+- [Model](https://geminicli.com/docs/cli/model)
+- [Model Routing](https://geminicli.com/docs/cli/model-routing)
+- [Settings](https://geminicli.com/docs/cli/settings)
+- [System Prompt](https://geminicli.com/docs/cli/system-prompt)
+- [Telemetry](https://geminicli.com/docs/cli/telemetry)
 - [Settings](https://geminicli.com/docs/cli/settings/)
 - [Model Selection](https://geminicli.com/docs/cli/model/)
 - [Model Routing](https://geminicli.com/docs/cli/model-routing/)
@@ -41,6 +65,15 @@
 
 - [Model Steering](https://geminicli.com/docs/cli/model-steering/)
 ## Tutorials
+- [Automation](https://geminicli.com/docs/cli/tutorials/automation)
+- [File Management](https://geminicli.com/docs/cli/tutorials/file-management)
+- [Mcp Setup](https://geminicli.com/docs/cli/tutorials/mcp-setup)
+- [Memory Management](https://geminicli.com/docs/cli/tutorials/memory-management)
+- [Session Management](https://geminicli.com/docs/cli/tutorials/session-management)
+- [Shell Commands](https://geminicli.com/docs/cli/tutorials/shell-commands)
+- [Skills Getting Started](https://geminicli.com/docs/cli/tutorials/skills-getting-started)
+- [Task Planning](https://geminicli.com/docs/cli/tutorials/task-planning)
+- [Web Tools](https://geminicli.com/docs/cli/tutorials/web-tools)
 - [Automation](https://geminicli.com/docs/cli/tutorials/automation/)
 - [File Management](https://geminicli.com/docs/cli/tutorials/file-management/)
 - [MCP Setup](https://geminicli.com/docs/cli/tutorials/mcp-setup/)
@@ -55,14 +88,19 @@
 - [Plan Mode Steering](https://geminicli.com/docs/cli/tutorials/plan-mode-steering/)
 - [Using Agent Skills](https://geminicli.com/docs/cli/using-agent-skills/)
 ## Tools
+- [Mcp Server](https://geminicli.com/docs/tools/mcp-server)
 - [MCP Server](https://geminicli.com/docs/tools/mcp-server/)
 
 - [MCP Resources](https://geminicli.com/docs/tools/mcp-resources/)
 ## Agentic Architecture
+- [Remote Agents](https://geminicli.com/docs/core/remote-agents)
+- [Subagents](https://geminicli.com/docs/core/subagents)
 - [Sub-Agents](https://geminicli.com/docs/core/subagents/)
 - [Remote Agents](https://geminicli.com/docs/core/remote-agents/)
 
 ## Hooks & Extensions
+- [Extensions](https://geminicli.com/docs/extensions)
+- [Hooks](https://geminicli.com/docs/hooks)
 - [Hooks](https://geminicli.com/docs/hooks/)
 - [Hooks Reference](https://geminicli.com/docs/hooks/reference/)
 - [Extensions](https://geminicli.com/docs/extensions/)
@@ -72,9 +110,15 @@
 - [Extensions Reference](https://geminicli.com/docs/extensions/reference/)
 
 ## IDE Integration
+- [Ide Integration](https://geminicli.com/docs/ide-integration)
 - [IDE Integration](https://geminicli.com/docs/ide-integration/)
 
 ## Reference
+- [Configuration](https://geminicli.com/docs/reference/configuration)
+- [Keyboard Shortcuts](https://geminicli.com/docs/reference/keyboard-shortcuts)
+- [Memport](https://geminicli.com/docs/reference/memport)
+- [Policy Engine](https://geminicli.com/docs/reference/policy-engine)
+- [Tools](https://geminicli.com/docs/reference/tools)
 - [Commands Reference](https://geminicli.com/docs/reference/commands)
 - [Configuration Reference](https://geminicli.com/docs/reference/configuration/)
 - [Keyboard Shortcuts](https://geminicli.com/docs/reference/keyboard-shortcuts/)
@@ -83,6 +127,10 @@
 
 - [Tools](https://geminicli.com/docs/reference/tools/)
 ## Resources
+- [Faq](https://geminicli.com/docs/resources/faq)
+- [Tos Privacy](https://geminicli.com/docs/resources/tos-privacy)
+- [Troubleshooting](https://geminicli.com/docs/resources/troubleshooting)
+- [Uninstall](https://geminicli.com/docs/resources/uninstall)
 - [FAQ](https://geminicli.com/docs/resources/faq/)
 - [Quota and Pricing](https://geminicli.com/docs/resources/quota-and-pricing)
 - [Terms of Service & Privacy](https://geminicli.com/docs/resources/tos-privacy/)
@@ -90,6 +138,14 @@
 - [Uninstall](https://geminicli.com/docs/resources/uninstall/)
 
 ## Development & Changelog
+- [Changelogs](https://geminicli.com/docs/changelogs)
+- [Latest](https://geminicli.com/docs/changelogs/latest)
+- [Preview](https://geminicli.com/docs/changelogs/preview)
+- [Contributing](https://geminicli.com/docs/contributing)
+- [Integration Tests](https://geminicli.com/docs/integration-tests)
+- [Issue And Pr Automation](https://geminicli.com/docs/issue-and-pr-automation)
+- [Local Development](https://geminicli.com/docs/local-development)
+- [Npm](https://geminicli.com/docs/npm)
 - [Contributing](https://geminicli.com/docs/contributing/)
 - [Issue & PR Automation](https://geminicli.com/docs/issue-and-pr-automation/)
 - [Local Development](https://geminicli.com/docs/local-development/)
