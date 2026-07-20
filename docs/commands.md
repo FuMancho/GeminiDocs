@@ -1,132 +1,134 @@
-# Commands Reference
+# Gemini CLI cheatsheet
 
-Complete reference for all Gemini CLI commands. Commands are prefixed with `/` (slash commands), `@` (at-commands for file injection), or `!` (shell passthrough).
+This page provides a reference for commonly used Gemini CLI commands, options,
+and parameters.
 
-## Slash Commands
+## CLI commands
 
-### Session & Navigation
+| Command                            | Description                        | Example                                                      |
+| ---------------------------------- | ---------------------------------- | ------------------------------------------------------------ |
+| `gemini`                           | Start interactive REPL             | `gemini`                                                     |
+| `gemini -p "query"`                | Query non-interactively            | `gemini -p "summarize README.md"`                            |
+| gemini "query"                     | Query and continue interactively   | gemini "explain this project"                                |
+| `cat file \| gemini`               | Process piped content              | `cat logs.txt \| gemini`<br>`Get-Content logs.txt \| gemini` |
+| `gemini -i "query"`                | Execute and continue interactively | `gemini -i "What is the purpose of this project?"`           |
+| `gemini -r "latest"`               | Continue most recent session       | `gemini -r "latest"`                                         |
+| `gemini -r "latest" "query"`       | Continue session with a new prompt | `gemini -r "latest" "Check for type errors"`                 |
+| `gemini -r "<session-id>" "query"` | Resume session by ID               | `gemini -r "abc123" "Finish this PR"`                        |
+| `gemini update`                    | Update to latest version           | `gemini update`                                              |
+| `gemini extensions`                | Manage extensions                  | See [Extensions Management](#extensions-management)          |
+| `gemini mcp`                       | Configure MCP servers              | See [MCP Server Management](#mcp-server-management)          |
 
-| Command | Description |
-|---|---|
-| `/help` (`/?`) | Show available commands |
-| `/quit` (`/exit`) | Exit Gemini CLI |
-| `/clear` | Clear terminal display (`Ctrl+L`) |
-| `/resume` | Browse and resume previous sessions |
-| `/rewind` | Navigate backward through history (`Esc` × 2) |
-| `/restore [id]` | Restore project files to a checkpoint |
+### Positional arguments
 
-### Conversation Management
+| Argument | Type              | Description                                                                                                |
+| -------- | ----------------- | ---------------------------------------------------------------------------------------------------------- |
+| `query`  | string (variadic) | Positional prompt. Defaults to interactive mode in a TTY. Use `-p/--prompt` for non-interactive execution. |
 
-| Command | Description |
-|---|---|
-| `/chat save <tag>` | Save current conversation state |
-| `/chat resume <tag>` | Resume from a saved checkpoint |
-| `/chat list` | List saved checkpoints (project-scoped) |
-| `/chat delete <tag>` | Delete a saved checkpoint |
-| `/chat share [file]` | Export conversation to `.md` or `.json` |
-| `/chat debug` | Export the most recent API request as JSON |
-| `/compress` | Replace chat context with a summary (saves tokens) |
-| `/copy` | Copy last output to clipboard |
+## Interactive commands
 
-### Configuration & Settings
+These commands are available within the interactive REPL.
 
-| Command | Description |
-|---|---|
-| `/settings` | Open the interactive settings editor |
-| `/model manage` | Configure the model interactively |
-| `/model set <name> [--persist]` | Set the active model |
-| `/theme` | Change the visual theme |
-| `/editor` | Select a supported editor |
-| `/vim` | Toggle vim-style input navigation |
-| `/terminal-setup` | Configure terminal keybindings for multiline input |
-| `/auth` | Change authentication method |
-| `/privacy` | Display privacy notice and consent options |
-| `/permissions trust [dir]` | Manage folder trust settings |
+| Command              | Description                                     |
+| -------------------- | ----------------------------------------------- |
+| `/skills reload`     | Reload discovered skills from disk              |
+| `/agents reload`     | Reload the agent registry                       |
+| `/commands list`     | List available custom slash commands            |
+| `/commands reload`   | Reload custom slash commands                    |
+| `/memory reload`     | Reload context files (for example, `GEMINI.md`) |
+| `/mcp reload`        | Restart and reload MCP servers                  |
+| `/extensions reload` | Reload all active extensions                    |
+| `/help`              | Show help for all commands                      |
+| `/quit`              | Exit the interactive session                    |
 
-### Tools & Extensions
+## CLI Options
 
-| Command | Description |
-|---|---|
-| `/tools [desc]` | List available tools (add `desc` for descriptions) |
-| `/mcp list` | List configured MCP servers |
-| `/mcp enable <name>` | Enable an MCP server |
-| `/mcp disable <name>` | Disable an MCP server |
-| `/mcp refresh` | Restart all MCP servers |
-| `/mcp auth <name>` | Authenticate with an OAuth-enabled MCP server |
-| `/extensions list` | List active extensions |
-| `/extensions install <repo>` | Install an extension |
-| `/extensions enable <name>` | Enable an extension |
-| `/extensions disable <name>` | Disable an extension |
-| `/extensions update [--all]` | Update extensions |
+| Option                           | Alias | Type    | Default   | Description                                                                                                                                                            |
+| -------------------------------- | ----- | ------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--debug`                        | `-d`  | boolean | `false`   | Run in debug mode with verbose logging                                                                                                                                 |
+| `--version`                      | `-v`  | -       | -         | Show CLI version number and exit                                                                                                                                       |
+| `--help`                         | `-h`  | -       | -         | Show help information                                                                                                                                                  |
+| `--model`                        | `-m`  | string  | `auto`    | Model to use. See [Model Selection](#model-selection) for available values.                                                                                            |
+| `--prompt`                       | `-p`  | string  | -         | Prompt text. Appended to stdin input if provided. Forces non-interactive mode.                                                                                         |
+| `--prompt-interactive`           | `-i`  | string  | -         | Execute prompt and continue in interactive mode                                                                                                                        |
+| `--worktree`                     | `-w`  | string  | -         | Start Gemini in a new git worktree. If no name is provided, one is generated automatically. Requires `experimental.worktrees: true` in settings.                       |
+| `--sandbox`                      | `-s`  | boolean | `false`   | Run in a sandboxed environment for safer execution                                                                                                                     |
+| `--skip-trust`                   | -     | boolean | `false`   | Trust the current workspace for this session, skipping the folder trust check.                                                                                         |
+| `--approval-mode`                | -     | string  | `default` | Approval mode for tool execution. Choices: `default`, `auto_edit`, `yolo`, `plan`                                                                                      |
+| `--yolo`                         | `-y`  | boolean | `false`   | **Deprecated.** Auto-approve all actions. Use `--approval-mode=yolo` instead.                                                                                          |
+| `--experimental-acp`             | -     | boolean | -         | Start in ACP (Agent Code Pilot) mode. **Experimental feature.**                                                                                                        |
+| `--experimental-zed-integration` | -     | boolean | -         | Run in Zed editor integration mode. **Experimental feature.**                                                                                                          |
+| `--allowed-mcp-server-names`     | -     | array   | -         | Allowed MCP server names (comma-separated or multiple flags)                                                                                                           |
+| `--allowed-tools`                | -     | array   | -         | **Deprecated.** Use the [Policy Engine](/docs/reference/policy-engine) instead. Tools that are allowed to run without confirmation (comma-separated or multiple flags) |
+| `--extensions`                   | `-e`  | array   | -         | List of extensions to use. If not provided, all extensions are enabled (comma-separated or multiple flags)                                                             |
+| `--list-extensions`              | `-l`  | boolean | -         | List all available extensions and exit                                                                                                                                 |
+| `--resume`                       | `-r`  | string  | -         | Resume a previous session. Use `"latest"` for most recent or index number (for example `--resume 5`)                                                                   |
+| `--list-sessions`                | -     | boolean | -         | List available sessions for the current project and exit                                                                                                               |
+| `--delete-session`               | -     | string  | -         | Delete a session by index number (use `--list-sessions` to see available sessions)                                                                                     |
+| `--include-directories`          | -     | array   | -         | Additional directories to include in the workspace (comma-separated or multiple flags)                                                                                 |
+| `--screen-reader`                | -     | boolean | -         | Enable screen reader mode for accessibility                                                                                                                            |
+| `--output-format`                | `-o`  | string  | `text`    | The format of the CLI output. Choices: `text`, `json`, `stream-json`                                                                                                   |
 
-### Agent Features
+## Model selection
 
-| Command | Description |
-|---|---|
-| `/skills list` | List all discovered skills |
-| `/skills enable <name>` | Enable a skill |
-| `/skills disable <name>` | Disable a skill |
-| `/skills reload` | Refresh skills from all tiers |
-| `/hooks list` | Display all registered hooks |
-| `/hooks enable <name>` | Enable a hook |
-| `/hooks disable <name>` | Disable a hook |
-| `/plan` | Switch to Plan Mode (read-only) |
-| `/policies list` | List all active policies by mode |
+The `--model` (or `-m`) flag lets you specify which Gemini model to use. You can
+use either model aliases (user-friendly names) or concrete model names.
 
-### Workspace & Files
+### Model aliases
 
-| Command | Description |
-|---|---|
-| `/directory add <path>` | Add a directory to the workspace |
-| `/directory show` | Display all added directories |
-| `/init` | Generate a `GEMINI.md` context file for the project |
-| `/memory add <text>` | Add text to AI memory |
-| `/memory list` | List active `GEMINI.md` file paths |
-| `/memory refresh` | Reload memory from all `GEMINI.md` files |
-| `/memory show` | Display the full concatenated memory |
-| `/commands reload` | Reload custom command definitions |
+These are convenient shortcuts that map to specific models:
 
-### Other
+| Alias        | Resolves To                                | Description                                                                                                               |
+| ------------ | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| `auto`       | `gemini-2.5-pro` or `gemini-3-pro-preview` | **Default.** Resolves to the preview model if preview features are enabled, otherwise resolves to the standard pro model. |
+| `pro`        | `gemini-2.5-pro` or `gemini-3-pro-preview` | For complex reasoning tasks. Uses preview model if enabled.                                                               |
+| `flash`      | `gemini-2.5-flash`                         | Fast, balanced model for most tasks.                                                                                      |
+| `flash-lite` | `gemini-2.5-flash-lite`                    | Fastest model for simple tasks.                                                                                           |
 
-| Command | Description |
-|---|---|
-| `/about` | Show version info |
-| `/bug [title]` | File a bug report on GitHub |
-| `/docs` | Open documentation in browser |
-| `/ide status` | Check IDE integration status |
-| `/shells` (`/bashes`) | Toggle background shells view |
-| `/setup-github` | Set up GitHub Actions with Gemini |
-| `/stats session` | Show session usage statistics |
-| `/stats model` | Show model token/quota info |
-| `/stats tools` | Show tool usage statistics |
+## Extensions management
 
-## At Commands (`@`)
+| Command                                            | Description                                  | Example                                                                        |
+| -------------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------ |
+| `gemini extensions install <source>`               | Install extension from Git URL or local path | `gemini extensions install https://github.com/user/my-extension`               |
+| `gemini extensions install <source> --ref <ref>`   | Install from specific branch/tag/commit      | `gemini extensions install https://github.com/user/my-extension --ref develop` |
+| `gemini extensions install <source> --auto-update` | Install with auto-update enabled             | `gemini extensions install https://github.com/user/my-extension --auto-update` |
+| `gemini extensions uninstall <name>`               | Uninstall one or more extensions             | `gemini extensions uninstall my-extension`                                     |
+| `gemini extensions list`                           | List all installed extensions                | `gemini extensions list`                                                       |
+| `gemini extensions update <name>`                  | Update a specific extension                  | `gemini extensions update my-extension`                                        |
+| `gemini extensions update --all`                   | Update all extensions                        | `gemini extensions update --all`                                               |
+| `gemini extensions enable <name>`                  | Enable an extension                          | `gemini extensions enable my-extension`                                        |
+| `gemini extensions disable <name>`                 | Disable an extension                         | `gemini extensions disable my-extension`                                       |
+| `gemini extensions link <path>`                    | Link local extension for development         | `gemini extensions link /path/to/extension`                                    |
+| `gemini extensions new <path>`                     | Create new extension from template           | `gemini extensions new ./my-extension`                                         |
+| `gemini extensions validate <path>`                | Validate extension structure                 | `gemini extensions validate ./my-extension`                                    |
 
-Inject file or directory contents directly into your prompt:
+See [Extensions Documentation](/docs/extensions) for more details.
 
-```text
-@path/to/file.txt Explain this code.
-@src/                Summarize all files in this directory.
-```
+## MCP server management
 
-> [!TIP]
-> Git-ignored files (e.g., `node_modules/`, `.env`) are excluded by default. Configure this via the `context.fileFiltering` setting.
+| Command                                                       | Description                     | Example                                                                                              |
+| ------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `gemini mcp add <name> <command>`                             | Add stdio-based MCP server      | `gemini mcp add github npx -y @modelcontextprotocol/server-github`                                   |
+| `gemini mcp add <name> <url> --transport http`                | Add HTTP-based MCP server       | `gemini mcp add api-server http://localhost:3000 --transport http`                                   |
+| `gemini mcp add <name> <command> --env KEY=value`             | Add with environment variables  | `gemini mcp add slack node server.js --env SLACK_TOKEN=xoxb-xxx`                                     |
+| `gemini mcp add <name> <command> --scope user`                | Add with user scope             | `gemini mcp add db node db-server.js --scope user`                                                   |
+| `gemini mcp add <name> <command> --include-tools tool1,tool2` | Add with specific tools         | `gemini mcp add github npx -y @modelcontextprotocol/server-github --include-tools list_repos,get_pr` |
+| `gemini mcp remove <name>`                                    | Remove an MCP server            | `gemini mcp remove github`                                                                           |
+| `gemini mcp list`                                             | List all configured MCP servers | `gemini mcp list`                                                                                    |
 
-## Shell Passthrough (`!`)
+See [MCP Server Integration](/docs/tools/mcp-server) for more details.
 
-Prefix a command with `!` to run it directly in your shell without leaving Gemini CLI (supports interactive shell autocompletion):
+## Skills management
 
-```text
-!git status
-!npm test
-```
+| Command                          | Description                           | Example                                           |
+| -------------------------------- | ------------------------------------- | ------------------------------------------------- |
+| `gemini skills list`             | List all discovered agent skills      | `gemini skills list`                              |
+| `gemini skills install <source>` | Install skill from Git, path, or file | `gemini skills install https://github.com/u/repo` |
+| `gemini skills link <path>`      | Link local agent skills via symlink   | `gemini skills link /path/to/my-skills`           |
+| `gemini skills uninstall <name>` | Uninstall an agent skill              | `gemini skills uninstall my-skill`                |
+| `gemini skills enable <name>`    | Enable an agent skill                 | `gemini skills enable my-skill`                   |
+| `gemini skills disable <name>`   | Disable an agent skill                | `gemini skills disable my-skill`                  |
+| `gemini skills enable --all`     | Enable all skills                     | `gemini skills enable --all`                      |
+| `gemini skills disable --all`    | Disable all skills                    | `gemini skills disable --all`                     |
 
-## Keyboard Shortcuts
-
-| Shortcut | Action |
-|---|---|
-| `Ctrl+L` | Clear screen |
-| `Alt+D` / `Cmd+D` | Forward word deletion |
-| `Esc` × 2 | Rewind |
-| `Alt+Z` / `Cmd+Z` | Undo in input |
-| `Shift+Alt+Z` / `Shift+Cmd+Z` | Redo in input |
+See [Agent Skills Documentation](/docs/cli/skills) for more details.

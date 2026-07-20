@@ -28,6 +28,7 @@
 - [Git Worktrees](https://geminicli.com/docs/cli/git-worktrees/)
 - [Notifications](https://geminicli.com/docs/cli/notifications/)
 - [Skills Best Practices](https://geminicli.com/docs/cli/skills-best-practices/)
+
 ## Configuration
 - [Settings](https://geminicli.com/docs/cli/settings/)
 - [Model Selection](https://geminicli.com/docs/cli/model/)
@@ -40,6 +41,7 @@
 - [Telemetry](https://geminicli.com/docs/cli/telemetry/)
 
 - [Model Steering](https://geminicli.com/docs/cli/model-steering/)
+
 ## Tutorials
 - [Automation](https://geminicli.com/docs/cli/tutorials/automation/)
 - [File Management](https://geminicli.com/docs/cli/tutorials/file-management/)
@@ -54,10 +56,12 @@
 - [Creating Skills](https://geminicli.com/docs/cli/creating-skills/)
 - [Plan Mode Steering](https://geminicli.com/docs/cli/tutorials/plan-mode-steering/)
 - [Using Agent Skills](https://geminicli.com/docs/cli/using-agent-skills/)
+
 ## Tools
 - [MCP Server](https://geminicli.com/docs/tools/mcp-server/)
 
 - [MCP Resources](https://geminicli.com/docs/tools/mcp-resources/)
+
 ## Agentic Architecture
 - [Sub-Agents](https://geminicli.com/docs/core/subagents/)
 - [Remote Agents](https://geminicli.com/docs/core/remote-agents/)
@@ -71,6 +75,9 @@
 - [Releasing Extensions](https://geminicli.com/docs/extensions/releasing/)
 - [Extensions Reference](https://geminicli.com/docs/extensions/reference/)
 
+- [Extensions](https://geminicli.com/extensions)
+- [Browse](https://geminicli.com/extensions/browse/)
+
 ## IDE Integration
 - [IDE Integration](https://geminicli.com/docs/ide-integration/)
 
@@ -82,12 +89,18 @@
 - [Policy Engine](https://geminicli.com/docs/reference/policy-engine/)
 
 - [Tools](https://geminicli.com/docs/reference/tools/)
+
 ## Resources
 - [FAQ](https://geminicli.com/docs/resources/faq/)
 - [Quota and Pricing](https://geminicli.com/docs/resources/quota-and-pricing)
 - [Terms of Service & Privacy](https://geminicli.com/docs/resources/tos-privacy/)
 - [Troubleshooting](https://geminicli.com/docs/resources/troubleshooting/)
 - [Uninstall](https://geminicli.com/docs/resources/uninstall/)
+
+- [Pricing](https://ai.google.dev/gemini-api/docs/pricing)
+- [Rate Limits](https://ai.google.dev/gemini-api/docs/rate-limits)
+- [Terms](https://ai.google.dev/gemini-api/terms)
+- [Plans](https://geminicli.com/plans/)
 
 ## Development & Changelog
 - [Contributing](https://geminicli.com/docs/contributing/)
