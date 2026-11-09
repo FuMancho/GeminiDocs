@@ -90,6 +90,7 @@
 - [Uninstall](https://geminicli.com/docs/resources/uninstall/)
 
 ## Development & Changelog
+- [Behavioral Evals](https://geminicli.com/docs/behavioral-evals/)
 - [Contributing](https://geminicli.com/docs/contributing/)
 - [Issue & PR Automation](https://geminicli.com/docs/issue-and-pr-automation/)
 - [Local Development](https://geminicli.com/docs/local-development/)
