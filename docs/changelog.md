@@ -4,7 +4,28 @@
 > Last updated: 2026-03-05
 
 
-## v0.42.0 (Latest Stable)
+## v0.64.0 (Latest Stable)
+
+```bash
+npm install -g @google/gemini-cli
+```
+
+## Highlights
+- **Atomic File Operations & State Recovery:** Serialized file tool operations
+  with atomic writes and introduced atomic CLI state persistence with automatic
+  recovery from backup on corruption.
+- **Chat Recording Optimization:** Implemented append-only delta patching and
+  bounded history windowing in ChatRecordingService to optimize memory and disk
+  efficiency during long-running sessions.
+- **CLI Input & Reference Resolution:** Added support for resolving `@file:line`
+  references, resolved CPU hangs and quote swallowing on `@` symbols within code
+  blocks, and prevented ghost text wrap hangs.
+- **Terminal UI & Interaction Stability:** Ensured Ctrl+C emergency aborts
+  reliably reach active cancellation handlers, made selection list confirmation
+  with Enter and Spacebar dependable, preserved scroll positions, and fixed
+  Windows ConPTY IME cursor forwarding.
+
+## v0.42.0
 
 ```bash
 npm install -g @google/gemini-cli
